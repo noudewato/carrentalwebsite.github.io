@@ -1,0 +1,19 @@
+{
+  "name": "carrental",
+  "version": "1.0.0",
+  "description": "respnsive car rental wensite\u001b[D\u001b[D\u001b[D\u001b[b\u001b[C\u001b[C\u001b[C\u001b[C build by fawaz\u001b[D\u001b[D\u001b[D\u001b[F\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noudewato/carrentalwebsite.github.io.git"
+  },
+  "author": "Fawaz Nodewato\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Du\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/noudewato/carrentalwebsite.github.io/issues"
+  },
+  "homepage": "https://github.com/noudewato/carrentalwebsite.github.io#readme"
+}

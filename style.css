@@ -1,0 +1,714 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,500&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+section {
+  margin: 50px 100px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.942);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 100px;
+}
+
+.logo .me {
+  color: rgb(0, 94, 255);
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar a {
+  padding: 10px 20px;
+  color: white;
+  font-weight: 500;
+}
+
+.navbar a::after {
+  content: "";
+  height: 3px;
+  position: absolute;
+  bottom: -4px;
+  background-color: rgb(0, 94, 255);
+  left: 0;
+  width: 0;
+  transition: 0.5s;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+.contact a {
+  color: white;
+  border: 0.5px solid rgb(0, 94, 255);
+  background-color: rgb(0, 94, 255);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.menu__icon {
+  display: none;
+}
+/* .contact a:hover {
+    background-color: #fff;
+} */
+
+.home {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(images/homebg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  margin-top: 75px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.home .home__text {
+  margin: 100px;
+}
+
+.home__text h1 {
+  font-size: 3.5rem;
+  letter-spacing: 0.3rem;
+}
+
+.home__text h1 span {
+  color: rgb(0, 94, 255);
+}
+
+.home__text p {
+  margin: 0.5rem 0 1.1rem;
+}
+
+.home__text button {
+  color: white;
+  border: 0.5px solid rgb(0, 94, 255);
+  background-color: rgb(0, 94, 255);
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.category {
+  margin: 10px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-box img {
+  margin: 1.5rem;
+  width: 80px;
+  height: 70px;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40%, auto));
+  gap: 2rem;
+  margin: 3rem 100px;
+}
+
+.about__img img {
+  margin: 1rem;
+  border-radius: 50px;
+  box-shadow: -41px 36px 0px -1px rgb(0, 94, 255);
+  -webkit-box-shadow: -41px 36px 0px -1px rgb(0, 94, 255);
+  -moz-box-shadow: -41px 36px 0px -1px rgb(0, 94, 255);
+}
+
+.about__text {
+  margin: 1rem;
+}
+
+.about__text h3 {
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+  margin: 0.5rem 1rem;
+}
+
+.about__text h1 {
+  font-size: 2rem;
+  margin: 0.5rem 1rem;
+}
+
+.about__text h3 span {
+  color: rgb(0, 94, 255);
+}
+
+.about__text p {
+  margin: 0.5rem 1rem;
+  text-transform: capitalize;
+}
+
+.about__text p span {
+  font-weight: 600;
+}
+
+.about__text button {
+  color: white;
+  border: 0.5px solid rgb(0, 94, 255);
+  background-color: rgb(0, 94, 255);
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 0.5rem 1rem;
+}
+
+.cars {
+  margin: 50px 100px;
+}
+
+.cars h1 {
+  text-align: center;
+  margin: 3rem;
+}
+
+.car__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.car__box {
+  background-color: white;
+}
+
+.car__box .box__img {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.car__box .box__img img {
+  width: 100%;
+  height: 300px;
+  border-radius: 0 1rem;
+}
+
+.car__box .box__img img {
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+}
+
+.car__box .box__img:hover img {
+  transform: scale(1.2);
+}
+
+.car__box .box__text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.box__text h3 span {
+  color: lightgrey;
+}
+
+.box__text h3 b {
+  color: red;
+}
+
+.car__box a {
+  color: rgb(0, 94, 255);
+  margin: 0.5rem;
+}
+
+.more__cars {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.more__cars button {
+  color: white;
+  border: 0.5px solid rgb(0, 94, 255);
+  background-color: rgb(0, 94, 255);
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 0.5rem auto;
+  width: 250px;
+}
+
+.service__text h2 {
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+  margin: 0.5rem 0;
+}
+
+.service__text h2 span {
+  color: rgb(0, 94, 255);
+}
+
+.service__content {
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40%, auto));
+  gap: 2rem;
+  margin: 3rem 100px;
+}
+
+.service__content img {
+  margin: 1rem;
+  border-radius: 50px;
+  box-shadow: 41px 36px 0px -1px rgb(0, 94, 255);
+  -webkit-box-shadow: 41px 36px 0px -1px rgb(0, 94, 255);
+  -moz-box-shadow: 41px 36px 0px -1px rgb(0, 94, 255);
+}
+
+.service__text button {
+  color: white;
+  border: 0.5px solid rgb(0, 94, 255);
+  background-color: rgb(0, 94, 255);
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 0.5rem 0;
+}
+
+.service__text ol li {
+  margin: 0.5rem 0;
+}
+
+.our__team h2 {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.team__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20%, auto));
+  gap: 2rem;
+  padding: 3rem 0;
+}
+
+.team__box:hover {
+  cursor: pointer;
+  transform: rotate(15deg);
+  transition: 0.3s all;
+}
+
+.team__box img {
+  height: 300px;
+}
+
+.team__content .flex__top img {
+  margin-top: -3rem;
+}
+
+.team__box .flex__down {
+  margin-top: 2rem;
+}
+
+footer {
+  background-color: black;
+  color: white;
+}
+
+.address {
+  background-color: rgb(0, 94, 255);
+}
+
+.address__content {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  gap: 1rem;
+}
+
+.address__content .address__box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.address__content .address__box i {
+  font-size: 4rem;
+  margin-right: 1rem;
+}
+
+.address__content .address__box p,
+.number {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.footer__links {
+  min-height: 40vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1rem 100px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(22%, auto));
+  gap: 1rem;
+}
+
+.footer__links a {
+  color: white;
+  font-weight: 300;
+}
+
+.footer__links h2 {
+  font-size: 2rem;
+}
+
+.footer__links h3 span {
+  color: rgb(0, 94, 255);
+}
+
+.footer__links .footer-box {
+  height: 220px;
+}
+
+@media only screen and (max-width: 991px) {
+  section {
+    margin: 1rem 2rem;
+  }
+  header {
+    padding: 1rem 2rem;
+  }
+
+  .menu__icon {
+    display: initial;
+    font-size: 1.5rem;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: white;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .navbar a {
+    padding: 10px 20px;
+    color: black;
+    font-weight: 500;
+  }
+
+  .home {
+    position: relative;
+    min-height: 40vh;
+  }
+
+  .home .home__text {
+    margin: 1rem;
+  }
+
+  .home__text h1 {
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .home__text h1 span {
+    color: rgb(0, 94, 255);
+  }
+
+  .home__text p {
+    margin: 0.5rem 0 1.1rem;
+    font-size: 1rem;
+  }
+
+  .home__text button {
+    color: white;
+    border: 0.5px solid rgb(0, 94, 255);
+    background-color: rgb(0, 94, 255);
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .service__content {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  section {
+    margin: 1rem 2rem;
+  }
+  header {
+    padding: 1rem 2rem;
+  }
+
+  .menu__icon {
+    display: initial;
+    font-size: 1.5rem;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: white;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .navbar a {
+    padding: 10px 20px;
+    color: black;
+    font-weight: 500;
+  }
+
+  .home {
+    position: relative;
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home .home__text {
+    margin: 1rem 2rem;
+  }
+
+  .home__text h1 {
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .home__text h1 span {
+    color: rgb(0, 94, 255);
+  }
+
+  .home__text p {
+    font-size: 1rem;
+    width: 50%;
+  }
+
+  .home__text button {
+    color: white;
+    border: 0.5px solid rgb(0, 94, 255);
+    background-color: rgb(0, 94, 255);
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0 0 1rem 0;
+  }
+
+  .about {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 2rem 2rem;
+  }
+
+  .about__img img {
+    border-radius: 50px;
+    box-shadow: -41px 36px 0px -1px rgb(0, 94, 255);
+    -webkit-box-shadow: -41px 36px 0px -1px rgb(0, 94, 255);
+    -moz-box-shadow: -41px 36px 0px -1px rgb(0, 94, 255);
+  }
+
+  .about__text {
+    margin: 0;
+    padding: 0;
+  }
+
+  .about__text h3 {
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    margin: 0.5rem 0;
+  }
+
+  .about__text h1 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+  }
+
+  .about__text h3 span {
+    color: rgb(0, 94, 255);
+  }
+
+  .about__text p {
+    margin: 0.5rem 0;
+    text-transform: capitalize;
+  }
+
+  .about__text p span {
+    font-weight: 600;
+  }
+
+  .about__text button {
+    color: white;
+    border: 0.5px solid rgb(0, 94, 255);
+    background-color: rgb(0, 94, 255);
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0.5rem 0;
+  }
+
+  .cars {
+    margin: 1rem 2rem;
+  }
+
+  .cars h1 {
+    text-align: left;
+    margin: 0;
+  }
+
+  .car__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .car__box {
+    background-color: white;
+  }
+
+  .car__box .box__img {
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .car__box .box__img img {
+    width: 100%;
+    height: 300px;
+    border-radius: 0 1rem;
+  }
+
+  .car__box .box__img img {
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+  }
+
+  .car__box .box__img:hover img {
+    transform: scale(1.2);
+  }
+
+  .car__box .box__text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem;
+  }
+
+  .box__text h3 span {
+    color: lightgrey;
+  }
+
+  .box__text h3 b {
+    color: red;
+  }
+
+  .car__box a {
+    color: rgb(0, 94, 255);
+    margin: 0.5rem;
+  }
+
+  .service__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 2rem 2rem;
+  }
+
+  .service__content img {
+    margin: 1rem 1rem;
+    border-radius: 50px;
+    box-shadow: -41px 36px 0px 1px rgb(0, 94, 255);
+    -webkit-box-shadow: -41px 36px 0px 1px rgb(0, 94, 255);
+    -moz-box-shadow: -41px 36px 0px 1px rgb(0, 94, 255);
+  }
+
+  .our__team h2 {
+    text-align: left;
+    margin: 3rem 0 1rem;
+  }
+
+  .team__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem 0;
+  }
+
+  .team__box:hover {
+    cursor: pointer;
+    transform: scale(1);
+    transition: 0.3s all;
+  }
+
+  .team__box img {
+    height: 300px;
+  }
+
+  .team__content .flex__top img {
+    margin-top: 0;
+  }
+
+  .team__box .flex__down {
+    margin-top: 0;
+  }
+
+  .footer__links {
+    min-height: 40vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem 2rem;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .footer__links .footer-box {
+    height: 220px;
+  }
+}
+
+/* Optional Exercise: Javascript Logic
+What is the Challenge?
+Solve the below 3 javascript puzzles. The goal of this challenge is to practice our logic skills. Something that is useful not only in interviews when you get challenging problems, but also in your day to day work as a developer. First, start off by reading this article: https://medium.freecodecamp.org/how-to-think-like-a-programmer-lessons-in-problem-solving-d1d8bf1de7d2
+
+Question 1: Clean the room function: given an input of [1,2,4,591,392,391,2,5,10,2,1,1,1,20,20], make a function that organizes these into individual array that is ordered. For example answer(ArrayFromAbove) should return: [[1,1,1,1],[2,2,2], 4,5,10,[20,20], 391, 392,591]. Bonus: Make it so it organizes strings differently from number types. i.e. [1, "2", "3", 2] should return [[1,2], ["2", "3"]]
+
+Question 2: Write a javascript function that takes an array of numbers and a target number. The function should find two different numbers in the array that, when added together, give the target number. For example: answer([1,2,3], 4)should return [1,3]
+
+Question 3: Write a function that converts HEX to RGB. Then Make that function auto-dect the formats so that if you enter HEX color format it returns RGB and if you enter RGB color format it returns HEX.
+
+You can see the solution files by other s478[;'/.LLLLLLLLLLLLLLLLLLLL
+ here */
